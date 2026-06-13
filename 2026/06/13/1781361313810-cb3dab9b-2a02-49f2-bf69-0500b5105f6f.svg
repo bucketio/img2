@@ -1,0 +1,33 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">后台程序拖慢开机</title>
+  <desc id="desc">开机时多个后台程序同时启动会占用处理器、内存、网络和硬盘资源</desc>
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <text x="70" y="84" fill="#111827" font-size="42" font-weight="700">开机不是进桌面就结束了</text>
+    <text x="72" y="130" fill="#475569" font-size="24">很多软件会抢在你操作之前先跑起来</text>
+    <g transform="translate(90 210)">
+      <rect width="330" height="310" rx="22" fill="#ffffff" stroke="#d1d5db"/>
+      <text x="38" y="58" fill="#111827" font-size="30" font-weight="700">你看到的</text>
+      <rect x="42" y="95" width="246" height="150" rx="16" fill="#e5e7eb"/>
+      <rect x="68" y="122" width="120" height="18" rx="5" fill="#94a3b8"/>
+      <rect x="68" y="160" width="174" height="18" rx="5" fill="#cbd5e1"/>
+      <rect x="68" y="198" width="94" height="18" rx="5" fill="#cbd5e1"/>
+      <text x="42" y="280" fill="#64748b" font-size="22">桌面已经出来了</text>
+    </g>
+    <path d="M465 365 H560" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M560 365 L535 342 M560 365 L535 388" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(610 180)">
+      <rect width="500" height="370" rx="22" fill="#ffffff" stroke="#d1d5db"/>
+      <text x="38" y="58" fill="#111827" font-size="30" font-weight="700">后台正在做的</text>
+      <g font-size="23" fill="#334155">
+        <rect x="44" y="92" width="190" height="54" rx="14" fill="#dbeafe"/><text x="70" y="128">聊天软件</text>
+        <rect x="264" y="92" width="190" height="54" rx="14" fill="#dcfce7"/><text x="290" y="128">网盘同步</text>
+        <rect x="44" y="170" width="190" height="54" rx="14" fill="#ede9fe"/><text x="70" y="206">更新程序</text>
+        <rect x="264" y="170" width="190" height="54" rx="14" fill="#ffedd5"/><text x="290" y="206">安全扫描</text>
+        <rect x="44" y="248" width="190" height="54" rx="14" fill="#fee2e2"/><text x="70" y="284">驱动工具</text>
+        <rect x="264" y="248" width="190" height="54" rx="14" fill="#e0f2fe"/><text x="290" y="284">输入法组件</text>
+      </g>
+      <text x="44" y="336" fill="#64748b" font-size="22">小程序多了，也会变成大负担</text>
+    </g>
+  </g>
+</svg>
