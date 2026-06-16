@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">关闭更新带来的隐性风险</title>
+  <desc id="desc">用累积风险条展示不更新会带来安全漏洞、兼容性下降和问题堆积。</desc>
+  <rect width="900" height="420" fill="#f7fbff"/>
+  <text x="55" y="62" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" font-weight="700" fill="#172033">长期不更新，风险不会立刻爆发，但会累积</text>
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <rect x="70" y="115" width="760" height="58" rx="12" fill="#ffffff" stroke="#c8d8ea" stroke-width="3"/>
+    <rect x="70" y="115" width="210" height="58" rx="12" fill="#ffcc8a"/>
+    <text x="95" y="153" font-size="22" font-weight="700" fill="#47301a">短期：少被打扰</text>
+    <text x="330" y="153" font-size="20" fill="#536271">电脑还能照常使用</text>
+    <rect x="70" y="205" width="760" height="58" rx="12" fill="#ffffff" stroke="#c8d8ea" stroke-width="3"/>
+    <rect x="70" y="205" width="430" height="58" rx="12" fill="#f08c6b"/>
+    <text x="95" y="243" font-size="22" font-weight="700" fill="#4f2115">中期：问题变多</text>
+    <text x="535" y="243" font-size="20" fill="#536271">蓝屏、驱动、网络异常难修</text>
+    <rect x="70" y="295" width="760" height="58" rx="12" fill="#ffffff" stroke="#c8d8ea" stroke-width="3"/>
+    <rect x="70" y="295" width="650" height="58" rx="12" fill="#d94e4e"/>
+    <text x="95" y="333" font-size="22" font-weight="700" fill="#ffffff">长期：安全风险</text>
+    <text x="745" y="333" font-size="20" fill="#536271">漏洞暴露</text>
+  </g>
+  <path d="M740 92l44 18v47c0 39-20 73-44 88-24-15-44-49-44-88v-47l44-18Z" fill="#e8f8f1" stroke="#2d9865" stroke-width="4"/>
+  <path d="M718 164l17 18 31-38" fill="none" stroke="#238057" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
