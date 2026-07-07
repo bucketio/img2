@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <style>
+      .font{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",Arial,sans-serif}
+      .h1{font-size:48px;font-weight:800;fill:#17324d}
+      .h2{font-size:30px;font-weight:800;fill:#17324d}
+      .txt{font-size:24px;fill:#41586c}
+      .num{font-size:34px;font-weight:900;fill:#fff}
+    </style>
+  </defs>
+  <rect width="1200" height="675" fill="#f7f1e8"/>
+  <text x="75" y="88" class="font h1">接下来真正该盯什么？</text>
+  <text x="78" y="128" class="font txt">别只盯情绪强弱，盯能被核验的硬东西。</text>
+  <g transform="translate(85 175)">
+    <rect width="1030" height="92" rx="22" fill="#fffdf9" stroke="#9bb0bf" stroke-width="3"/>
+    <circle cx="52" cy="46" r="28" fill="#17324d"/>
+    <text x="52" y="58" text-anchor="middle" class="font num">1</text>
+    <text x="104" y="43" class="font h2">刑事进展</text>
+    <text x="104" y="74" class="font txt">立案之后，侦查、审查起诉或结案结果如何落地。</text>
+  </g>
+  <g transform="translate(85 285)">
+    <rect width="1030" height="92" rx="22" fill="#fffdf9" stroke="#9bb0bf" stroke-width="3"/>
+    <circle cx="52" cy="46" r="28" fill="#d9903f"/>
+    <text x="52" y="58" text-anchor="middle" class="font num">2</text>
+    <text x="104" y="43" class="font h2">医院整改</text>
+    <text x="104" y="74" class="font txt">术前讨论、风险评估、术后监测、病历质控有没有清单。</text>
+  </g>
+  <g transform="translate(85 395)">
+    <rect width="1030" height="92" rx="22" fill="#fffdf9" stroke="#9bb0bf" stroke-width="3"/>
+    <circle cx="52" cy="46" r="28" fill="#66a46a"/>
+    <text x="52" y="58" text-anchor="middle" class="font num">3</text>
+    <text x="104" y="43" class="font h2">监管复盘</text>
+    <text x="104" y="74" class="font txt">主管部门责任怎么改，不只是“深刻检查”。</text>
+  </g>
+  <g transform="translate(85 505)">
+    <rect width="1030" height="92" rx="22" fill="#fffdf9" stroke="#9bb0bf" stroke-width="3"/>
+    <circle cx="52" cy="46" r="28" fill="#d86154"/>
+    <text x="52" y="58" text-anchor="middle" class="font num">4</text>
+    <text x="104" y="43" class="font h2">书面答复</text>
+    <text x="104" y="74" class="font txt">家属新疑问是否有编号、可查询、可复议的正式回应。</text>
+  </g>
+</svg>
