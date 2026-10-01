@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 700" width="760" height="700">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#94A3B8"/>
+  </linearGradient>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/>
+  </linearGradient>
+  <filter id="shadowSm">
+    <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/>
+  </marker>
+</defs>
+
+<rect width="760" height="700" fill="#F8FAFC"/>
+
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">第一期和现在,架构图对一下</text>
+<text x="380" y="76" font-size="14" fill="#64748B" text-anchor="middle">左边是第一期 09 篇的说法,右边是 2026.9.4 源码文档里的说法</text>
+
+<!-- Headers -->
+<g filter="url(#shadowSm)">
+  <rect x="30" y="100" width="330" height="44" rx="12" fill="url(#gSlate)"/>
+  <rect x="400" y="100" width="330" height="44" rx="12" fill="url(#gBlue)"/>
+</g>
+<text x="195" y="128" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">第一期(拆解 OpenClaw 09)</text>
+<text x="565" y="128" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">现在(2026.9.4)</text>
+
+<!-- LEFT: Gateway -->
+<g filter="url(#shadowSm)">
+  <rect x="50" y="170" width="290" height="60" rx="12" fill="#FFFFFF" stroke="#CBD5E1"/>
+</g>
+<text x="195" y="196" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">Gateway</text>
+<text x="195" y="216" font-size="12" fill="#64748B" text-anchor="middle">接入</text>
+<line x1="195" y1="232" x2="195" y2="262" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- LEFT: Pi Agent (crossed) -->
+<rect x="50" y="264" width="290" height="100" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="195" y="296" font-size="15" font-weight="700" fill="#64748B" text-anchor="middle">Pi Agent</text>
+<text x="195" y="318" font-size="12" fill="#94A3B8" text-anchor="middle">第一期的说法:基于外部开源框架 pi-mono</text>
+<text x="195" y="344" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="middle">CHANGELOG:并入 OpenClaw,删掉旧依赖</text>
+<circle cx="326" cy="278" r="13" fill="#DC2626"/>
+<text x="326" y="284" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">×</text>
+<line x1="195" y1="366" x2="195" y2="396" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- LEFT: Bridge (crossed) -->
+<rect x="50" y="398" width="290" height="100" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="195" y="430" font-size="15" font-weight="700" fill="#64748B" text-anchor="middle">Bridge</text>
+<text x="195" y="452" font-size="12" fill="#94A3B8" text-anchor="middle">第一期的说法:桥接</text>
+<text x="195" y="478" font-size="12" font-weight="700" fill="#B91C1C" text-anchor="middle">两份架构文档里没有 bridge 这个词</text>
+<circle cx="326" cy="412" r="13" fill="#DC2626"/>
+<text x="326" y="418" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">×</text>
+
+<!-- RIGHT: Gateway -->
+<g filter="url(#shadowSm)">
+  <rect x="420" y="170" width="290" height="60" rx="12" fill="#FFFFFF" stroke="#CBD5E1"/>
+</g>
+<text x="565" y="206" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">Gateway</text>
+<line x1="565" y1="232" x2="565" y2="262" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- RIGHT: runtime container -->
+<g filter="url(#shadowSm)">
+  <rect x="420" y="264" width="290" height="234" rx="12" fill="#FFF7ED" stroke="#FDBA74"/>
+</g>
+<text x="565" y="292" font-size="15" font-weight="700" fill="#9A3412" text-anchor="middle">agent runtime</text>
+<text x="565" y="312" font-size="12" fill="#B45309" text-anchor="middle">内置的归 OpenClaw 自己,代码在 src/agents/</text>
+<g class="mono" font-size="13" text-anchor="middle">
+  <rect x="436" y="330" width="123" height="44" rx="10" fill="#FFFFFF" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="497.5" y="357" fill="#9A3412" font-weight="700">openclaw</text>
+  <rect x="571" y="330" width="123" height="44" rx="10" fill="#FFFFFF" stroke="#FDBA74"/>
+  <text x="632.5" y="357" fill="#9A3412">codex</text>
+  <rect x="436" y="384" width="123" height="44" rx="10" fill="#FFFFFF" stroke="#FDBA74"/>
+  <text x="497.5" y="411" fill="#9A3412">copilot</text>
+  <rect x="571" y="384" width="123" height="44" rx="10" fill="#FFFFFF" stroke="#FDBA74"/>
+  <text x="632.5" y="411" fill="#9A3412">claude-cli</text>
+</g>
+<text x="565" y="456" font-size="12" fill="#B45309" text-anchor="middle">内置:openclaw。插件 harness:codex、copilot</text>
+<text x="565" y="476" font-size="12" fill="#B45309" text-anchor="middle">CLI 后端:claude-cli</text>
+<line x1="565" y1="500" x2="565" y2="530" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrGray)"/>
+
+<!-- RIGHT: Channel -->
+<g filter="url(#shadowSm)">
+  <rect x="420" y="532" width="290" height="60" rx="12" fill="#FFFFFF" stroke="#CBD5E1"/>
+</g>
+<text x="565" y="558" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">Channel</text>
+<text x="565" y="578" font-size="12" fill="#64748B" text-anchor="middle">Discord、Slack、Telegram、WhatsApp</text>
+
+<!-- State bars -->
+<rect x="50" y="612" width="290" height="62" rx="12" fill="#FFFFFF" stroke="#CBD5E1"/>
+<text x="195" y="638" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">会话与转录存储</text>
+<text x="195" y="658" font-size="12" fill="#64748B" text-anchor="middle">JSONL 文件,带 id 和 parentId 的树</text>
+
+<rect x="420" y="612" width="290" height="62" rx="12" fill="#FFFFFF" stroke="#CBD5E1"/>
+<text x="565" y="638" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">会话与转录存储</text>
+<text x="565" y="658" font-size="12" fill="#64748B" text-anchor="middle">SQLite,每个 agent 一个库</text>
+</svg>
