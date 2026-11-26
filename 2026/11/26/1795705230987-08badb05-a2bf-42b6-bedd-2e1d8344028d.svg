@@ -1,0 +1,23 @@
+<svg viewBox="0 0 680 210" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>需求信息在链条上逐级失真</title>
+<desc>零售商看到销量、分销商看到零售订单、工厂看到分销订单，每一级只看到下一环的信号</desc>
+<text x="40" y="38" font-family="sans-serif" font-size="14" font-weight="500" fill="#0C447C">每一级只看到下游的订单，而不是终端的真实消耗</text>
+<rect x="40" y="60" width="132" height="64" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+<text x="106" y="84" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#0C447C">终端消费者</text>
+<text x="106" y="108" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#185FA5">真实消耗 +10%</text>
+<rect x="196" y="60" width="132" height="64" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+<text x="262" y="84" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#0C447C">零售商</text>
+<text x="262" y="108" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#185FA5">看到销量，下单 +20%</text>
+<rect x="352" y="60" width="132" height="64" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+<text x="418" y="84" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#993C1D">分销商</text>
+<text x="418" y="108" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#993C1D">看到订单，下单 +50%</text>
+<rect x="508" y="60" width="132" height="64" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+<text x="574" y="84" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#993C1D">工厂</text>
+<text x="574" y="108" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#993C1D">看到订单，排产 +100%</text>
+<defs><marker id="ai" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<path d="M174 92 L193 92" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#ai)"/>
+<path d="M330 92 L349 92" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#ai)"/>
+<path d="M486 92 L505 92" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#ai)"/>
+<text x="40" y="165" font-family="sans-serif" font-size="12" fill="#444441">信号每传递一层，就失真一次；每一级都在对自己做最优决策，合起来却让整条链失控。</text>
+<text x="40" y="190" font-family="sans-serif" font-size="11" fill="#5F5E5A">图中增幅为教学示意数字，用于说明放大机制。</text>
+</svg>
